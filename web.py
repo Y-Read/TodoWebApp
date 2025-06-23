@@ -5,7 +5,7 @@ todoList = functions.get_todolist()
 
 def add_todo():
     todo = st.session_state["new_todo"]
-    todoList.append("\n" + todo)
+    todoList.append(todo + "\n")
     functions.write_todolist(todoList)
 
 st.title("My Todo App")
